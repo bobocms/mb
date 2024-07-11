@@ -1,0 +1,91 @@
+服务器环境要求：
+
+	Window系统：所有版本系统;
+
+	Linux系统 ：所有版本系统;
+
+        运行环境：Apache/Nginx/Lighttpd/IIS
+
+        PHP版本：支持5.4--7.2版本运行
+
+	最低配置1G内存、单核cpu，几十个G的硬盘空间
+
+一、前期准备
+
+	第①步：更换原创库，若不需要用，可以忽略
+
+	将原创库txt文档放到 public/juzi 目录下 文档名称随意，每个文档控制在300K以内。
+        可以直接网上下载一部小说放进去就可以。
+
+        第②步：更换图库，若不需要用，可以忽略
+       
+        第③步：若要做短网址，短网址生成，运行 根目录下的  dwz.php文件，根据提示操作进行生成
+
+        扩展可选项：
+              若需要用采集文章和新闻标题的方式；打开浏览器 访问 http://域名/caiji/caiji.html地址即可
+              系统默认下采用手工添加文章和网站标题
+              采集临时模板；打开浏览器 运行 http://域名/caiji/getmuban.html地址即可
+              制作模板；打开浏览器 运行 http://域名/caiji/makemuban.html地址即可
+
+二、域名解析
+
+	域名解析需做泛解析，即解析的时候 填写 * 号
+
+	如 luoboseo.cn 泛解析为 *.luoboseo.cn
+
+三、查看蜘蛛记录
+
+        打开浏览器 访问 http://域名/spider.html 即可查看蜘蛛来访记录
+
+四、目录说明
+
+         admin/                 后台管理
+         caiji/                 模板采集制作
+         include/               核心库
+         member/                蜘蛛池会员管理
+	 pics/			图库
+	 static/		模板静态文件
+         caiji/                 采集插件目录
+	 public/cache/          缓存目录
+	 public/domains/	存放根域名列表，不要带www
+         public/shorturl/	短网址列表
+	 public/duankou/	计算机端口，生成数字用，默认即可
+	 public/juzi/	        采集的新闻内容，也可自己放置文档
+         public/fullname/       姓名，一行一个
+         public/newstitle       采集的新闻标题
+         public/ipaddress/      需要进制的IP地址，用作于IP进制形式优化，不限txt文件个数，一行一条，每个文件不超过300K
+
+	 public/waituikeywords/	   外推编码关键词，不限txt文件个数，一行一个，每个文件不超过300K
+	 public/waituikeywords2/   外推编码关键词，不限txt文件个数，一行一个，每个文件不超过300K
+	 public/waituiurl/	   外推链接 知名站点搜索地址，不限txt文件个数，一行一个，每个文件不超过300K
+                                   外推模板超链接标签格式：<a href="<卜卜_随机外推URL><卜卜_随机外推关键词>"><卜卜_随机关键词></a>
+	 public/tesuwaituiurl/	   外推链接 知名站点搜索地址，不限txt文件个数，一行一个，每个文件不超过300K
+                                   外推模板超链接标签格式：<a href="<卜卜_随机特殊外推URL前1><卜卜_随机外推关键词2><卜卜_随机特殊外推URL后1>"><卜卜_随机关键词></a>
+
+	 public/friendlink/	   强大蜘蛛池，多组站群可以实现串联，给新站带外链，格式：<a href="http://www.baidu.com">百度</a>
+         public/info/              目录下为客户资料夹，随机获取客户资料夹
+                                              webname      网站名称，一行一个，如：行业知名网站名称等，每个文档控制在300K以内。
+                                              keywords     客户关键词，一行一个，每个文档控制在300K以内。
+                    每个资料夹---->           description  网站描述，一行一个，每个文档控制在300K以内。
+                                              jump         跳转js，不限文件个数，随便命名，随机调用
+     
+         template/private_muban/   一对一模板，不限文件个数，随便命名，随机调用。
+                 /public_muban/    公用模板，不限文件个数，随便命名，随机调用。
+                 /zhiding_muban/   指定的目录页与内页模板
+                 /map/             网站地图，不限文件个数，随便命名，随机调用。
+
+
+五、模板制作
+	
+	站群搭建完之后，将根域名生成二级域名，二级域名可以随便组合，数字、字母、数字加字母、关键词全拼、关键首拼、年月日都可以，然后去一些外推网站发下几条外链，几分钟后便开始收录
+
+
+六、查看蜘蛛记录
+
+    打开浏览器 访问 http://域名/spider.html 即可查看记录
+
+
+
+
+
+

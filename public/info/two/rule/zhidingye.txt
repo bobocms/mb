@@ -1,0 +1,3 @@
+/dir/neiye.html|article1.html
+/dir/mulu|list1.html
+/cesi/456.html|article2.html

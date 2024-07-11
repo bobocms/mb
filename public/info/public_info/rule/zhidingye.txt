@@ -1,0 +1,2 @@
+/dir/123.html|article3.html
+/dir/fanmulu|list3.html

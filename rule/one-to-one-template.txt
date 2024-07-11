@@ -1,0 +1,2 @@
+localhost|muban1|one
+127.0.0.1|muban2|two
